@@ -4,7 +4,7 @@ body{
     background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
 
     background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
-    animation: grad 1s ease infinite;
+    animation: grad 0.1s ease infinite;
     background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#C0C4FF", GradientType=1 );
@@ -26,26 +26,85 @@ body{
     max-width: fit-content;
     margin-inline: auto;
     margin-top: 20%;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 1000;
     font-size: 250%;
     cursor: pointer;
     user-select: none;
 }
 .choosing {
-    opacity: 0;
-    pointer-events: none;
     max-width: fit-content;
     margin-inline: auto;
     margin-top: 10%;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 1000;
     font-size: 250%;
-    cursor:wait;
+    cursor:alias;
     user-select: none;
     
 }
 .g1 {
     align-content: center;
     
+}
+.g2 {
+    margin-top: 2%;
+    margin-left: 31%;
+    
+}
+.org {
+    cursor: crosshair;
+    width: 25%;
+    height: 35%;
+    user-select: none;
+}
+.org:hover {
+    animation: hoverr 1.5s ease none;
+    animation-fill-mode: forwards;
+}
+.guest:hover{
+    animation-fill-mode: forwards;
+    animation: hoverr 1.5s ease none;
+}
+@keyframes hoverr {
+    0% {
+        box-shadow: 0 0 1px rgb(149, 156, 255)
+    }
+    50% {
+        box-shadow: 0 0 50px rgb(149, 156, 255)
+    }
+    100% {
+        box-shadow: 0 0 100px rgb(149, 156, 255)
+    }
+}
+.guest {
+    cursor: crosshair;
+    margin-left: 5%;
+    width: 25%;
+    height: 35%;
+    user-select: none;
+}
+.guest2 {
+    position: absolute;
+    margin-left: 6%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 250%;
+    user-select: none;
+    padding-left: 20%;
+}
+.org2 {
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 250%;
+
+    user-select: none;
+}
+
+.container {
+    margin-top: 10%;
+}
+.shortsize {
+    padding-right: 25%;
 }
